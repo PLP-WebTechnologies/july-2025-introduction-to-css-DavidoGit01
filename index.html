@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine - Enhanced Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Page Header-->
+<header>
+    <h1>Daily Routine of Big_D</h1>
+    <p>This page shows a glimpse of David's day-to-day life as an average aged male.</p>
+</header>
+
+<!--Section: Daily Tasks List-->
+<section class="routine">
+    <h2>My Daily routine</h2>
+    <ol> 
+         <li><h3>Morning Routine</h3></li>
+             <ul>
+                <li>Wake up at 6:30 AM</li>
+                <li>Brush teeth and freshen up</li>
+                <li>Do 10 minutes of streching</li>
+                <li>Eat a healthy breakfast</li>
+             </ul>
+         <li><h3>Mid-Day Routine</h3></li>
+             <ul>
+                <li>Work/study from 9 AM to 5 PM</li>
+             </ul>
+         <li><h3>Evening Routine</h3></li>
+             <ul>
+             <li>Have dinner at 7:00 PM</li>
+             <li>Read a book for 30 minutes</li>
+             <li>Plan next day's tasks</li>
+             <li>Sleep by 10:00 PM</li>
+             </ul>
+    </ol>
+   
+</section>
+<!--Section: Weekly Routine Table-->
+    <section class="routine-table">
+        <h2>Weekly Exercise Schedule</h2>
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Main Activity</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td> Work</td>
+                <td> 8 hours</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td> Work + Gym</td>
+                <td> 9 hours</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td> Work + Family Time</td>
+                <td> 8.5 hours</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td> Work</td>
+                <td> 8 hours</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td> Work + Dinner out</td>
+                <td> 9 hours</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td> House chores + rest</td>
+                <td> 9 hours</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Family Outing</td>
+                <td>6 hours</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+<!--Section: Media-->
+<section class="media">
+    <h2>Daily Inspiration</h2>
+    <figure>
+        <img src="Morning-Jog.jpg" alt="Morning Jog" width="400" height="600">
+        <figcaption>A refreshing morning Jog to start the day right.</figcaption>
+    </figure>
+    <audio controls>
+        <source src="bollywood-162250.mp3" type="audio/mp3">
+        Your browser does not Support the audio element
+    </audio>
+    <video width="400" controls>
+        <source src="4932793_Person_Human_3840x2160.mp4" type="video/mp4">
+         Your browser does not Support the video tag
+    </video>
+</section>
+<!--Section: Daily Routine Form-->
+<section class="form-section">
+    <h2>Share Your Routine</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Fullname:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Big_D" required autocomplete="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required autocomplete="email"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="65" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Daily Habits</legend>
+            <label>Wake Up time</label>
+            <input type="time" name="wakeuptime" required><br><br>
+            <label>Favorite Morning Drink:</label>
+            <select name="drink" required>
+                <option value="">--Select--</option>
+                <option value="tea">Tea</option>
+                <option value="coffee">Coffee</option>
+                <option value="juice">Juice</option>
+                <option value="water">Water</option>
+            </select><br><br>
+            <label>Do you exercise?</label>
+            <input type="radio" name="exercise" value="yes" required>Yes
+            <input type="radio" name="exercise" value="no" required> No<br><br>
+            <label for="bio">Write a short bio:</label>
+            <textarea id="bio" name="bio" rows="4" cols="40" placeholder="tell us about your daily life..." minlength="10" maxlength="200" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Account Setup</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" pattern="A-Za-z0-9{5,}" placeholder="Atleast 5 letters or numbers" required><br><br>
+            <label for="username">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required><br><br>
+            <label for="readonlyfield">Account Type:</label>
+            <input type="text" id="readonlyfield" value="Standard User" readonly><br><br>
+        </fieldset><br><br>
+        <button type="submit">Submit Routine</button>
+    </form>
+</section>
+
+<!--Footer-->
+<footer>
+    <p>&copy; 2025 Daily Routine Project Big_D</p>
+</footer>
+
+</body>
+</html>
